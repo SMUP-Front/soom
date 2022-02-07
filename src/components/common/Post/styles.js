@@ -34,6 +34,19 @@ export const Top = styled.div`
   }
 `;
 
+export const Explain = styled.div`
+  width: 349px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  padding-top: 10px;
+`;
+
 export const Class = styled.div`
   font-size: 18px;
   color: #242424;
