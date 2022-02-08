@@ -26,6 +26,7 @@ export const Top = styled.div`
     height: 40px;
     background-color: #e8e8e8;
     border-radius: 6px;
+    object-fit: cover;
   }
   div {
     display: flex;
@@ -33,6 +34,33 @@ export const Top = styled.div`
   }
   img {
     height: 20px;
+    object-fit: cover;
+  }
+`;
+
+export const Comment = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  input {
+    width: 590px;
+    height: 30px;
+    background: #dfdede;
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    padding-left: 18px;
+  }
+`;
+
+export const Profile = styled.div`
+  img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 100px;
+    background-color: #e8e8e8;
   }
 `;
 
@@ -48,6 +76,7 @@ export const BigImage = styled.div`
     height: 382px;
     background-color: #e8e8e8;
     margin-bottom: 7px;
+    object-fit: cover;
   }
 `;
 
@@ -56,6 +85,7 @@ export const SmallImage = styled.div`
     width: 254px;
     height: 254px;
     background-color: #e8e8e8;
+    object-fit: cover;
   }
 `;
 
@@ -82,7 +112,8 @@ export const Review = styled.div`
   display: flex;
   justify-content: space-around;
   img {
-      margin-right: 9px;
+    margin-right: 9px;
+    object-fit: cover;
   }
 `;
 
