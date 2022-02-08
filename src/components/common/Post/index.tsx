@@ -3,6 +3,7 @@ import * as S from "./styles";
 import menu from "../../../asset/img/menu.png";
 import like from "../../../asset/img/like.png";
 import chat from "../../../asset/img/Chat.png";
+import airplane from "../../../asset/img/airplane.png";
 
 export default function Post() {
   return (
@@ -53,6 +54,13 @@ export default function Post() {
                 <span>댓글 보기</span>
               </div>
             </S.Review>
+            <S.Comment>
+              <S.Profile>
+                <img src="" alt="" />
+              </S.Profile>
+              <input type="search" placeholder="댓글을 입력해주세요..." />
+              <img src={airplane} alt="" />
+            </S.Comment>
           </S.Bottom>
         </main>
       </S.Post>
