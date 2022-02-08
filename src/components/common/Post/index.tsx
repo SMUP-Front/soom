@@ -1,6 +1,8 @@
 import React from "react";
 import * as S from "./styles";
 import menu from "../../../asset/img/menu.png";
+import like from "../../../asset/img/like.png";
+import chat from "../../../asset/img/Chat.png";
 
 export default function Post() {
   return (
@@ -40,6 +42,18 @@ export default function Post() {
             </S.SmallImage>
             {/* 나중에 map함수 돌리기 big - 2, small - 3 */}
           </S.Thumbnail>
+          <S.Bottom>
+            <S.Review>
+              <div>
+                <img src={like} alt="" />
+                <span>좋아요</span>
+              </div>
+              <div>
+                <img src={chat} alt="" />
+                <span>댓글 보기</span>
+              </div>
+            </S.Review>
+          </S.Bottom>
         </main>
       </S.Post>
     </>
