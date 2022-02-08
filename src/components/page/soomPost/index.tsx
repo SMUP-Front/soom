@@ -1,5 +1,5 @@
 import React from "react";
-import Group from "../../common/Group";
+import Group from "../../common/GroupProfile";
 import Post from "../../common/Post";
 
 export default function SoomPost() {
