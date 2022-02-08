@@ -47,6 +47,7 @@ export const BigImage = styled.div`
     width: 382px;
     height: 382px;
     background-color: #e8e8e8;
+    margin-bottom: 7px;
   }
 `;
 
@@ -68,9 +69,21 @@ export const Explain = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 14px;
-  padding-top: 14px;
-  padding-left: 14px;
+  padding: 14px 0px 0px 14px;
   margin-bottom: 14px;
+`;
+
+export const Bottom = styled.div`
+  padding-top: 32px;
+`;
+
+export const Review = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  img {
+      margin-right: 9px;
+  }
 `;
 
 export const Class = styled.div`
