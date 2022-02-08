@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Group = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 38px;
   margin: 38px 0px;
   div > div {
     width: 162px;
@@ -12,10 +11,14 @@ export const Group = styled.div`
     background-color: #e8e8e8;
   }
   div > img {
+    border: 3px solid #ffffff;
     width: 100%;
-    height: 162px;
+    height: 159px;
     border-radius: 100px;
     object-fit: cover;
+  }
+  div > img:hover {
+    border: 3px solid #ae6fff;
   }
   div {
     display: inline-flex;
