@@ -5,8 +5,8 @@ export const Post = styled.div`
   justify-content: center;
   main {
     margin-top: 10px;
-    width: 900px;
-    height: 900px;
+    width: 774px;
+    height: 858px;
     padding: 21px 63px;
     box-shadow: 0px 0px 10px 0px #e8e8e8;
   }
@@ -16,7 +16,8 @@ export const Top = styled.div`
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 752px;
+  padding-left: 14px;
   span {
     display: inline-flex;
   }
@@ -24,6 +25,7 @@ export const Top = styled.div`
     width: 40px;
     height: 40px;
     background-color: #e8e8e8;
+    border-radius: 6px;
   }
   div {
     display: flex;
@@ -31,6 +33,28 @@ export const Top = styled.div`
   }
   img {
     height: 20px;
+  }
+`;
+
+export const Thumbnail = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`;
+
+export const BigImage = styled.div`
+  img {
+    width: 382px;
+    height: 382px;
+    background-color: #e8e8e8;
+  }
+`;
+
+export const SmallImage = styled.div`
+  img {
+    width: 254px;
+    height: 254px;
+    background-color: #e8e8e8;
   }
 `;
 
@@ -44,7 +68,9 @@ export const Explain = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 14px;
-  padding-top: 10px;
+  padding-top: 14px;
+  padding-left: 14px;
+  margin-bottom: 14px;
 `;
 
 export const Class = styled.div`
