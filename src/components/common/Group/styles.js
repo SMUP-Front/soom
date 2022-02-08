@@ -25,10 +25,6 @@ export const Group = styled.div`
     width: 906px;
     justify-content: space-between;
   }
-  img {
-    height: 16px;
-    width: 16px;
-  }
   main {
     display: flex;
     align-items: center;
