@@ -17,6 +17,10 @@ export default function SoomGroup() {
             <img src={etc} alt="" />
           </main>
         </S.Top>
+        <hr />
+        <S.Club>
+          
+        </S.Club>
       </S.Group>
     </>
   );
