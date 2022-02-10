@@ -49,5 +49,5 @@ export const PageNation = styled.div`
 export const AddButton = styled.div`
   position: absolute;
   right: 142px;
-  top: 908px;
+  top: 989px;
 `;
