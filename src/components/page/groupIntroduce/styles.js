@@ -65,17 +65,6 @@ export const IntroduceTitle = styled.div`
   font-weight: bold;
 `;
 
-export const BackGround = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 7%;
-  img {
-    width: 24.74%;
-    height: 30.2%;
-    object-fit: cover;
-  }
-`;
-
 export const ProfileImage = styled.div`
   position: absolute;
   width: 8.23%;

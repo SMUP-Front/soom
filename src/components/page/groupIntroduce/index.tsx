@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./styles";
 import BackGround1 from "../../../asset/img/BackGround1.png";
+import BackGround2 from "../../../asset/img/BackGround2.png";
 
 export default function GroupIntroduce() {
   let width: number = window.innerWidth;
@@ -9,7 +10,7 @@ export default function GroupIntroduce() {
   return (
     <>
       <S.ProfileImage width={width}>
-          <img src="" alt=""/>
+        <img src="" alt="" />
       </S.ProfileImage>
       <S.Banner height={height} />
       <S.Top>
@@ -32,9 +33,6 @@ export default function GroupIntroduce() {
       <S.Introduction>
         아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무
       </S.Introduction>
-      <S.BackGround>
-        <img src={BackGround1} alt="" />
-      </S.BackGround>
     </>
   );
 }
