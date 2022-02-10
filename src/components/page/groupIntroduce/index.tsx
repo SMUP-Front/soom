@@ -1,10 +1,19 @@
 import React from "react";
 import * as S from "./styles";
+import BackGround1 from "../../../asset/img/BackGround1.png";
+import Header from "../../common/header";
 
 export default function GroupIntroduce() {
+  let width: number = window.innerWidth;
+  let height: number = window.innerHeight;
+
   return (
     <>
-      <S.Banner />
+      <Header />
+      <S.ProfileImage width={width}>
+          <img src="" alt=""/>
+      </S.ProfileImage>
+      <S.Banner height={height} />
       <S.Top>
         <S.Title>
           <S.Profile>the moment</S.Profile>
@@ -21,6 +30,13 @@ export default function GroupIntroduce() {
           <S.Request>가입 요청</S.Request>
         </div>
       </S.Top>
+      <S.IntroduceTitle>소개말</S.IntroduceTitle>
+      <S.Introduction>
+        아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무
+      </S.Introduction>
+      <S.BackGround>
+        <img src={BackGround1} alt="" />
+      </S.BackGround>
     </>
   );
 }
