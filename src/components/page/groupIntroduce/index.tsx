@@ -2,6 +2,7 @@ import React from "react";
 import * as S from "./styles";
 import BackGround1 from "../../../asset/img/BackGround1.png";
 import BackGround2 from "../../../asset/img/BackGround2.png";
+import IntroduceBackGround from "../../common/IntroduceBackGround";
 
 export default function GroupIntroduce() {
   let width: number = window.innerWidth;
@@ -33,6 +34,7 @@ export default function GroupIntroduce() {
       <S.Introduction>
         아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무라아무말아무
       </S.Introduction>
+      <IntroduceBackGround />
     </>
   );
 }
