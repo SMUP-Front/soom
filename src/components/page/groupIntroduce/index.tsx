@@ -1,7 +1,6 @@
 import React from "react";
 import * as S from "./styles";
 import BackGround1 from "../../../asset/img/BackGround1.png";
-import Header from "../../common/header";
 
 export default function GroupIntroduce() {
   let width: number = window.innerWidth;
@@ -9,7 +8,6 @@ export default function GroupIntroduce() {
 
   return (
     <>
-      <Header />
       <S.ProfileImage width={width}>
           <img src="" alt=""/>
       </S.ProfileImage>
