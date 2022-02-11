@@ -9,25 +9,32 @@ export const Title = styled.div`
   margin-top: 94px;
 `;
 
-export const Main = styled.div`
+export const Information = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 26.56%;
 `;
 
 export const ProfileImage = styled.div`
   margin-top: 49px;
+  img {
+    width: 100%;
+  }
 `;
 
 export const BannerImage = styled.div`
   margin-top: 28px;
+  img {
+    width: 100%;
+  }
 `;
 
 export const GroupProperty = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 526px;
+  width: 100%;
   height: 123px;
   margin-top: 35px;
   button {
@@ -56,8 +63,9 @@ export const Branch = styled.div`
 
 export const GroupName = styled.div`
   margin-top: 34px;
+  width: 100%;
   input {
-    width: 480px;
+    width: 91.2%;
     height: 53px;
     border: none;
     outline: none;
@@ -73,9 +81,10 @@ export const GroupName = styled.div`
 
 export const GroupInformation = styled.div`
   margin-top: 10px;
+  width: 100%;
   textarea {
+    width: 91.2%;
     resize: none;
-    width: 480px;
     height: 195px;
     border: none;
     outline: none;
@@ -90,7 +99,7 @@ export const GroupInformation = styled.div`
 `;
 
 export const Create = styled.div`
-  width: 526px;
+  width: 100%;
   height: 67px;
   margin-top: 44px;
   margin-bottom: 202px;
@@ -104,4 +113,44 @@ export const Create = styled.div`
     font-weight: bold;
     border-radius: 6px;
   }
+`;
+
+export const Word = styled.div`
+  margin-right: 89px;
+  margin-left: -215.6px;
+  font-size: 24px;
+  font-weight: bold;
+`;
+
+export const Main = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  hr {
+    position: absolute;
+    left: 33%;
+    top: 329px;
+    border-left: 1px solid #dabcff;
+    height: 837px;
+  }
+`;
+
+export const WordProfile = styled.div`
+  margin-top: 93px;
+`;
+
+export const WordBanner = styled.div`
+  margin-top: 144px;
+`;
+
+export const WordProperty = styled.div`
+  margin-top: 213px;
+`;
+
+export const WordName = styled.div`
+  margin-top: 123px;
+`;
+
+export const WordExplain = styled.div`
+  margin-top: 21px;
 `;
