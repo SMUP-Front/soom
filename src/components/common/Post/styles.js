@@ -5,7 +5,7 @@ export const Post = styled.div`
   justify-content: center;
   main {
     margin-top: 10px;
-    width: 774px;
+    width: 41%;
     height: 858px;
     padding: 21px 63px;
     box-shadow: 0px 0px 10px 0px #e8e8e8;
@@ -16,7 +16,7 @@ export const Top = styled.div`
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  width: 752px;
+  width: 100%;
   padding-left: 14px;
   span {
     display: inline-flex;
@@ -68,12 +68,22 @@ export const Thumbnail = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  height: 75%;
 `;
 
 export const BigImage = styled.div`
+  width: 49%;
+  height: 55%;
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
   img {
-    width: 382px;
-    height: 382px;
+    width: 100%;
+    height: 100%;
     background-color: #e8e8e8;
     margin-bottom: 7px;
     object-fit: cover;
@@ -81,9 +91,11 @@ export const BigImage = styled.div`
 `;
 
 export const SmallImage = styled.div`
+  width: 32%;
+  height: 40%;
   img {
-    width: 254px;
-    height: 254px;
+    width: 100%;
+    height: 100%;
     background-color: #e8e8e8;
     object-fit: cover;
   }

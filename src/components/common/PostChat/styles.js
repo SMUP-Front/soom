@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const Main = styled.div`
-  width: 458px;
+  width: 23%;
   height: 899px;
   background-color: #ffffff;
   box-shadow: 0px 10px 10px 0px #e8e8e8;
   border-radius: 12px 12px 0px 0px;
+  margin-top: 10px;
+  position: absolute;
 `;
 
 export const Head = styled.div`
