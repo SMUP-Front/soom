@@ -8,6 +8,7 @@ export const Main = styled.div`
   border-radius: 12px 12px 0px 0px;
   margin-top: 10px;
   position: absolute;
+  right: 0px;
 `;
 
 export const Head = styled.div`
