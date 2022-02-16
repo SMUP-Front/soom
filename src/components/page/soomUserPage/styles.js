@@ -48,8 +48,64 @@ export const Button = styled.div`
   color: #fff;
   padding: 1px 16px 1px 16px;
   font-size: 18px;
+  justify-content: center;
 `;
 export const ButtonDiv = styled.div`
   margin-bottom: 10px;
 `;
 
+export const Contents = styled.div`
+  margin-top: 38px;
+  width: 1020px;
+  height: 222px;
+`;
+
+export const Title = styled.div`
+  margin-left: 45px;
+  font-size: 24px;
+  color: #242424;
+`;
+
+export const Group = styled.div`
+  width: 895px;
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    background-color: #e7e7e7;
+    object-fit: cover;
+  }
+`;
+
+export const Content = styled.div`
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Moment = styled.div`
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #242424;
+  span {
+    display: flex;
+    justify-content: space-between;
+    width: 865px;
+  }
+`;
+
+export const Background3 = styled.div`
+  position: absolute;
+  top: 797px;
+  left: 255px;
+`;
+
+export const Background4 = styled.div`
+  position: absolute;
+  top: 757px;
+  right: 216px;
+`;
