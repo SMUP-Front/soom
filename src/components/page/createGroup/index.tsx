@@ -1,10 +1,46 @@
 import * as S from "./styles";
 import uploadImage1 from "../../../asset/img/uploadImage1.png";
 import uploadImage2 from "../../../asset/img/uploadImage2.png";
+import axios from "axios";
+import { useState } from "react";
+import { BASE_URL } from "../../../lib/api";
 
 export default function CreateGroup() {
   const property: string[] = ["동아리", "사설동아리", "친목", "운동", "스터디"];
   const branch: string[] = ["Web", "App", "Back", "etc."];
+  type valueType = {
+    name: string;
+    description: string;
+    type: string;
+  };
+
+  const [value, setValue] = useState<valueType>({
+    name: "",
+    description: "",
+    type: "",
+  });
+
+  async function handleGroupCreate() {
+    const params: valueType = {
+      name: value.name,
+      description: value.description,
+      type: value.type,
+    };
+
+    await axios
+      .post<any>(BASE_URL + "/api/v1/group", params)
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }
+
+  const handleInputChange = (props: string) => (e: any) => {
+    setValue({ ...value, [props]: e.target.value });
+    console.log(value);
+  };
 
   return (
     <>
@@ -38,13 +74,22 @@ export default function CreateGroup() {
             </S.Branch>
           </S.GroupProperty>
           <S.GroupName>
-            <input placeholder="비속어, 은어는 사용하지 말아주세요." />
+            <input
+              type="text"
+              value={value.name}
+              onChange={handleInputChange("name")}
+              placeholder="비속어, 은어는 사용하지 말아주세요."
+            />
           </S.GroupName>
           <S.GroupInformation>
-            <textarea placeholder="100자 이내로 작성해 주세요." />
+            <textarea
+              value={value.description}
+              onChange={handleInputChange("description")}
+              placeholder="100자 이내로 작성해 주세요."
+            />
           </S.GroupInformation>
           <S.Create>
-            <button>그룹 만들기</button>
+            <button onClick={handleGroupCreate}>그룹 만들기</button>
           </S.Create>
         </S.Information>
       </S.Main>
