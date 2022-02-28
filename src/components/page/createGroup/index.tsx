@@ -3,11 +3,11 @@ import uploadImage1 from "../../../asset/img/uploadImage1.png";
 import uploadImage2 from "../../../asset/img/uploadImage2.png";
 import axios from "axios";
 import { useState } from "react";
-import { BASE_URL } from "../../../lib/api";
+import { BASE_URL } from "../../../lib/export";
 
 export default function CreateGroup() {
-  const property: string[] = ["동아리", "사설동아리", "친목", "운동", "스터디"];
-  const branch: string[] = ["Web", "App", "Back", "etc."];
+  const property: string[] = ["CLUB", "CLUB_MAJOR", "TEAM"];
+  const branch: string[] = ["COUNCIL", "ClUB_ETC"];
   type valueType = {
     name: string;
     description: string;
@@ -26,6 +26,7 @@ export default function CreateGroup() {
       description: value.description,
       type: value.type,
     };
+    console.log(params);
 
     await axios
       .post<any>(BASE_URL + "/api/v1/group", params)
@@ -39,6 +40,11 @@ export default function CreateGroup() {
 
   const handleInputChange = (props: string) => (e: any) => {
     setValue({ ...value, [props]: e.target.value });
+    console.log(value);
+  };
+
+  const handlePropertyChange = (props: string) => (e: any) => {
+    setValue({ ...value, type: props });
     console.log(value);
   };
 
@@ -64,12 +70,16 @@ export default function CreateGroup() {
           <S.GroupProperty>
             <S.Property>
               {property.map((item) => (
-                <button>{item}</button>
+                <button onClick={handlePropertyChange(`${item}`)}>
+                  {item}
+                </button>
               ))}
             </S.Property>
             <S.Branch>
               {branch.map((item) => (
-                <button>{item}</button>
+                <button onClick={handlePropertyChange(`${item}`)}>
+                  {item}
+                </button>
               ))}
             </S.Branch>
           </S.GroupProperty>
