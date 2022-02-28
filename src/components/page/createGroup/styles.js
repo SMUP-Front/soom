@@ -36,7 +36,6 @@ export const GroupProperty = styled.div`
   align-items: center;
   width: 100%;
   height: 123px;
-  margin-top: 35px;
   button {
     border: none;
     background-color: #f0f0f0;
@@ -46,28 +45,16 @@ export const GroupProperty = styled.div`
     color: #242424;
     cursor: pointer;
     outline: none;
+    width: 120px;
   }
 `;
 
 export const Property = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  button {
-    width: 140px;
-  }
-`;
-
-export const Branch = styled.div`
+  width: 87%;
   margin-top: 17px;
-  width: 79.6%;
   display: flex;
   justify-content: space-between;
-  button {
-    width: 180px;
-  }
 `;
-
 export const GroupName = styled.div`
   margin-top: 34px;
   width: 100%;
