@@ -40,11 +40,12 @@ export const GroupProperty = styled.div`
   button {
     border: none;
     background-color: #f0f0f0;
-    width: 96px;
     height: 53px;
     border-radius: 3px;
     font-size: 16px;
     color: #242424;
+    cursor: pointer;
+    outline: none;
   }
 `;
 
@@ -52,6 +53,9 @@ export const Property = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  button {
+    width: 140px;
+  }
 `;
 
 export const Branch = styled.div`
@@ -59,6 +63,9 @@ export const Branch = styled.div`
   width: 79.6%;
   display: flex;
   justify-content: space-between;
+  button {
+    width: 180px;
+  }
 `;
 
 export const GroupName = styled.div`
@@ -112,6 +119,8 @@ export const Create = styled.div`
     font-size: 24px;
     font-weight: bold;
     border-radius: 6px;
+    cursor: pointer;
+    outline: none;
   }
 `;
 
