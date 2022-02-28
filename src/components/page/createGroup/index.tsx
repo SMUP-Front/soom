@@ -6,8 +6,9 @@ import { useState } from "react";
 import { BASE_URL } from "../../../lib/export";
 
 export default function CreateGroup() {
-  const property: string[] = ["CLUB", "CLUB_MAJOR", "TEAM"];
-  const branch: string[] = ["COUNCIL", "ClUB_ETC"];
+  const property: string[] = ["CLUB", "CLUB_MAJOR", "CLUB_CA"];
+  const branch: string[] = ["TEAM", "COUNSIL", "ClUB_ETC"];
+  const showProperty: string[] = ["동아리", "전공 동아리", "창체 동아리", "팀", "의회", "기타"];
   type valueType = {
     name: string;
     description: string;
@@ -69,19 +70,19 @@ export default function CreateGroup() {
           </S.BannerImage>
           <S.GroupProperty>
             <S.Property>
-              {property.map((item) => (
+              {property.map((item, i) => (
                 <button onClick={handlePropertyChange(`${item}`)}>
-                  {item}
+                  {showProperty[i]}
                 </button>
               ))}
             </S.Property>
-            <S.Branch>
-              {branch.map((item) => (
+            <S.Property>
+              {branch.map((item, i) => (
                 <button onClick={handlePropertyChange(`${item}`)}>
-                  {item}
+                  {showProperty[i + 3]}
                 </button>
               ))}
-            </S.Branch>
+            </S.Property>
           </S.GroupProperty>
           <S.GroupName>
             <input
